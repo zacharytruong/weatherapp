@@ -1,0 +1,124 @@
+/* Global Styles */
+:root {
+  --primary-color: rgba(204, 159, 159, 1);
+  --secondary-color: rgba(242, 221, 215, 1);
+  --primary-white-color: rgba(255, 255, 255, 1);
+  --primary-text-color: rgba(219, 203, 197, 1);
+  --secondary-text-color: rgba(117, 117, 117, 1);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 10px;
+  line-height: 1.6;
+}
+h1,
+h2,
+h3 {
+  color: var(--primary-white-color);
+  font-family: 'Expletus Sans', cursive;
+  text-transform: uppercase;
+}
+h1 {
+  font-size: 5rem;
+}
+h2 {
+  font-size: 3rem;
+}
+h3 {
+  font-size: 2rem;
+}
+p {
+  font-family: 'Hind', sans-serif;
+  font-size: 1.6rem;
+  color: var(--primary-text-color);
+  padding: 1rem 2rem;
+}
+
+/* Main */
+body {
+  min-height: 100vh;
+  background: url('./images/hero-image.jpg') no-repeat fixed center;
+}
+.appContainer {
+  width: 100%;
+  min-height: 100vh;
+  font-size: 5rem;
+  color: var(--primary-white-color);
+  position: relative;
+}
+.glassEffect {
+  background: rgba( 0, 0, 0, 0.15 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( .8rem );
+  -webkit-backdrop-filter: blur( .8rem );
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.searchForm {
+  max-width: 40rem;
+  display: flex;
+  padding: 2rem 2rem;
+  justify-content: center;
+  margin: 0 auto;
+}
+#searchField {
+  border: none;
+  width: 100%;
+  border-radius: 2.5rem;
+  font-size: 3rem;
+}
+input#searchField[type=text] {
+  padding: 1rem 2rem;
+}
+#searchField:focus-visible {
+  outline: none;
+}
+#searchField:focus {
+  outline: none;
+}
+.searchForm > .fa-solid.fa-magnifying-glass {
+  padding: 0 1rem;
+}
+.searchForm > .fa-solid.fa-magnifying-glass:hover {
+  color: var(--primary-text-color);
+}
+.mainDataContainer {
+  display: flex;
+  padding: 1rem;
+}
+.left {
+  width: 80%;
+}
+.location {
+  font-size: 2rem;
+}
+.temp {
+  font-size: 10rem;
+}
+.col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+.subDataContainer {
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 40rem;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 2rem 1rem;
+}
+.subDataContainer > .col {
+  text-align: center;
+  width: calc(100% / 3);
+}
+.subDataContainer > .col > .title {
+  font-size: 1.25rem;
+}
