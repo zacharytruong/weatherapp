@@ -23,6 +23,6 @@ The app illustrate the follwing skills:
 - Prettier
 - Babel
 
-Github Source Code ❤️ [Github Source Code](https://github.com/zacharytruong/justdoit).
+Github Source Code ❤️ [Github Source Code](https://github.com/zacharytruong/weatherapp).
 
-Live Demo 👉 [Live Demo](https://zacharytruong.github.io/justdoit).
+Live Demo 👉 [Live Demo](https://zacharytruong.github.io/weatherapp).
